@@ -4,6 +4,7 @@ import "./_App.scss";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Feed from "./components/Feed/Feed";
+import Widgets from "./components/Widgets/Widgets";
 
 function App() {
 	return (
@@ -14,6 +15,8 @@ function App() {
 				<Sidebar />
 
 				<Feed />
+
+				<Widgets />
 			</div>
 		</div>
 	);
