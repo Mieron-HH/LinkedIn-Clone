@@ -1,0 +1,121 @@
+@import "../../styles/common";
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.sidebar__component {
+	height: fit-content;
+	flex: 0.225;
+	border-radius: 8px;
+	text-align: center;
+	position: sticky;
+	top: 0;
+
+	.sidebar__top {
+		padding-bottom: 10px;
+		@include display_flex(column, flex-start, center);
+		background-color: white;
+		border: 1px solid lightgray;
+		border-bottom: 0;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+
+		img {
+			width: 100%;
+			height: 60px;
+			border-top-left-radius: 8px;
+			border-top-right-radius: 8px;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+		}
+
+		.sidebar__avatar {
+			width: 66px;
+			height: 66px;
+			margin-top: calc(60px - 33px);
+			margin-bottom: 10px;
+			border: 3px solid white;
+		}
+
+		h2 {
+			font-size: 18px;
+			font-weight: 600;
+		}
+
+		h4 {
+			color: gray;
+			font-size: 13px;
+			font-weight: 500;
+		}
+	}
+
+	.sidebar__stats {
+		margin-bottom: 10px;
+		padding: 10px;
+		background-color: white;
+		border: 1px solid lightgray;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+
+		.sidebar__stat {
+			margin-top: 10px;
+			@include display_flex(flex, space-between);
+
+			p {
+				color: gray;
+				font-size: 12px;
+				font-weight: 600;
+			}
+
+			.sidebar__statNumber {
+				color: #0a66c2;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.sidebar__bottom {
+		margin-top: 10px;
+		padding: 10px 0;
+		background-color: white;
+		border: 1px solid lightgray;
+		border-radius: 8px;
+
+		.sidebar__bottom__container {
+			text-align: left;
+			margin-bottom: 20px;
+
+			p {
+				margin-left: 10px;
+				color: #0a66c2;
+				font-size: 13px;
+				font-weight: bold;
+			}
+
+			.sidebar__recentItem {
+				margin-top: 10px;
+				margin-bottom: 5px;
+				padding: 3px 10px;
+				@include display_flex();
+				cursor: pointer;
+
+				&:hover {
+					background-color: whitesmoke;
+				}
+
+				.sidebar__hash {
+					color: #333;
+					font-size: 18px;
+					font-weight: bolder;
+				}
+
+				p {
+					margin-left: 4px;
+					color: gray;
+					font-size: 13px;
+					font-weight: bolder;
+				}
+			}
+		}
+	}
+}
