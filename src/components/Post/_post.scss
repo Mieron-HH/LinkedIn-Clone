@@ -1,0 +1,39 @@
+@import "../../styles/common";
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.post__component {
+	width: 100%;
+	margin: 10px 0;
+	padding: 15px;
+	background-color: white;
+	border: 1px solid $borderColor;
+	border-radius: 8px;
+
+	.post__header {
+		margin-bottom: 10px;
+		@include display_flex();
+
+		.post__info {
+			margin-left: 10px;
+
+			h2 {
+				font-size: 15px;
+			}
+
+			p {
+				color: gray;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.post__body {
+		overflow-wrap: anywhere;
+	}
+
+	.post__buttons {
+		width: 100%;
+		@include display_flex(row, space-around);
+	}
+}

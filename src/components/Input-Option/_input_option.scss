@@ -1,0 +1,25 @@
+@import "../../styles/common";
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.inputOption__component {
+	padding: 10px;
+	@include display_flex(row, center, center);
+	cursor: pointer;
+
+	&:hover {
+		background-color: whitesmoke;
+		border-radius: 5px;
+	}
+
+	&:active {
+		opacity: 0.8;
+	}
+
+	h4 {
+		margin-left: 10px;
+		color: #555;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}
