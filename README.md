@@ -23,7 +23,7 @@ To kickstart your LinkedIn Clone journey, follow these simple steps:
 1. **Clone the Repository**: Get your hands on the code by cloning this repository to your local machine.
 
    ```shell
-   git clone https://github.com/yourusername/linkedin-clone.git
+   git clone https://github.com/NeverLost-Never/LinkedIn-Clone.git
    ```
 
 2. **Install Dependencies**: Navigate to the project directory and install all the necessary dependencies.
