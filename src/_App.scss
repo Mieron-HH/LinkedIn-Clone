@@ -1,0 +1,17 @@
+@import "./styles/common";
+@import "./styles/variables";
+@import "./styles/mixin";
+
+.app {
+	width: 100vw;
+	min-height: 100vh;
+	@include display_flex(column, flex-start, center);
+	background-color: #f3f2ef;
+
+	.app__body {
+		width: 83%;
+		max-width: 1200px;
+		@include display_flex();
+		margin: 25px 20px 0 20px;
+	}
+}

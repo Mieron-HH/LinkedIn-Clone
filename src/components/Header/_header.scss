@@ -1,0 +1,52 @@
+@import "../../styles/common";
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.header__component {
+	width: 100vw;
+	height: 8vh;
+	padding: 0 8.5%;
+	@include display_flex(row, space-between, center);
+	background-color: white;
+	border-bottom: 0.1px solid lightgray;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+
+	.header__left {
+		width: 28.5%;
+		height: 65%;
+		@include display_flex(row, center, center);
+
+		img {
+			margin-right: 7px;
+			object-fit: contain;
+			height: 33px;
+		}
+
+		.header__search {
+			width: calc(100% - 40px);
+			height: 100%;
+			padding-left: 15px;
+			@include display_flex(row, flex-start, center);
+			background-color: #f4f8fb;
+			border-radius: 5px;
+			color: gray;
+
+			.header__search__icon {
+				color: #333;
+				font-size: 20px;
+			}
+
+			input {
+				background: none;
+				border: none;
+				outline: none;
+			}
+		}
+	}
+
+	.header__right {
+		@include display_flex(row, space-evenly, center);
+	}
+}
