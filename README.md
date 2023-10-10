@@ -44,19 +44,3 @@ To kickstart your LinkedIn Clone journey, follow these simple steps:
 5. **Connect with Redux**: Dive into Redux to manage your app's state efficiently. Customize it to suit your needs.
 
 6. **Deploy with Vercel**: When you're ready to share your LinkedIn Clone with the world, deploy it with Vercel for a seamless and scalable experience.
-
-### Features
-
-- **User Authentication**: Secure login and registration powered by Firebase authentication, so you can connect with peace of mind.
-
-- **User Profiles**: Create and customize your professional profile, showcasing your skills and experience.
-
-- **Networking**: Connect with other professionals, build your network, and explore potential opportunities.
-
-- **News Feed**: Stay updated with the latest industry news, job openings, and posts from your connections.
-
-- **Messaging**: Start conversations and build professional relationships through our built-in messaging system.
-
-- **Notifications**: Stay informed with real-time notifications about new connection requests and messages.
-
-_Disclaimer: This is a fictional LinkedIn Clone project and not affiliated with LinkedIn in any way._
