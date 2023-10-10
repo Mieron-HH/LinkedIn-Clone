@@ -34,7 +34,7 @@ const Sidebar = () => {
 
 				<div className="sidebar__stats">
 					<div className="sidebar__stat">
-						<p>Who's viewd your profile</p>
+						<p>Who's viewed your profile</p>
 						<p className="sidebar__statNumber">2,543</p>
 					</div>
 
